@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,9 +28,36 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAV-Rh-Jsw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-bk-gjj">
+                                        <rect key="frame" x="236" y="8" width="128" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="45m-UQ-LnO"/>
+                                            <constraint firstAttribute="height" constant="39" id="a6b-2B-J5S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOL-9A-juc">
+                                        <rect key="frame" x="562" y="11" width="38" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Ytn-1a-pMC"/>
+                                            <constraint firstAttribute="width" constant="38" id="cGq-Vq-Vg2"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOO-bi-bpw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="lOL-9A-juc" firstAttribute="top" secondItem="DAV-Rh-Jsw" secondAttribute="top" constant="11" id="Wt1-rm-eIg"/>
+                                    <constraint firstItem="ztd-bk-gjj" firstAttribute="centerY" secondItem="DAV-Rh-Jsw" secondAttribute="centerY" id="bvK-ni-bl7"/>
+                                    <constraint firstItem="ztd-bk-gjj" firstAttribute="centerX" secondItem="DAV-Rh-Jsw" secondAttribute="centerX" id="dCq-yC-TqP"/>
                                     <constraint firstAttribute="height" constant="55" id="gMa-R2-zjm"/>
+                                    <constraint firstAttribute="trailing" secondItem="lOL-9A-juc" secondAttribute="trailing" id="yQr-NR-JOk"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Iw-KQ-h77">
@@ -123,5 +155,6 @@
     <resources>
         <image name="10" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="16" height="16"/>
     </resources>
 </document>
