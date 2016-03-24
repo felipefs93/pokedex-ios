@@ -18,6 +18,7 @@
 		9A74DDC31CA3950200428DD4 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74DDC21CA3950200428DD4 /* csv.swift */; };
 		9A74DDC81CA39D7B00428DD4 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A74DDC71CA39D7B00428DD4 /* pokemon.ttf */; };
 		9A74DDCA1CA3A19F00428DD4 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A74DDC91CA3A19F00428DD4 /* music.mp3 */; };
+		9A8406BD1CA47D1700452B59 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8406BC1CA47D1700452B59 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9A74DDC21CA3950200428DD4 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		9A74DDC71CA39D7B00428DD4 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		9A74DDC91CA3A19F00428DD4 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		9A8406BC1CA47D1700452B59 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9A74DDAA1CA33BE100428DD4 /* ViewController.swift */,
+				9A8406BC1CA47D1700452B59 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				9A74DDC11CA37B4600428DD4 /* PokeCell.swift in Sources */,
 				9A74DDAB1CA33BE100428DD4 /* ViewController.swift in Sources */,
 				9A74DDA91CA33BE100428DD4 /* AppDelegate.swift in Sources */,
+				9A8406BD1CA47D1700452B59 /* PokemonDetailVC.swift in Sources */,
 				9A74DDBE1CA358EC00428DD4 /* Pokemon.swift in Sources */,
 				9A74DDC31CA3950200428DD4 /* csv.swift in Sources */,
 			);
@@ -352,6 +356,7 @@
 				9A74DDB91CA33BE100428DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
