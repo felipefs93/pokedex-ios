@@ -23,6 +23,42 @@ class Pokemon {
     private var _nextEvolutionLvl:String!
     private var _pokemonURL: String!
     
+    var nextEvolutionTxt:String{
+        return _nextEvolutionTxt
+    }
+    
+    var nextEvolutionId:String{
+        return _nextEvolutionId
+    }
+    
+    var nextEvolutionLvl:String{
+        return _nextEvolutionLvl
+    }
+    
+    var description:String{
+        return _description
+    }
+    
+    var type:String{
+        return _type
+    }
+    
+    var defense:String{
+        return _defense
+    }
+    
+    var height:String{
+        return _height
+    }
+    
+    var weight:String{
+        return _weight
+    }
+    
+    var attack:String{
+        return _attack
+    }
+    
     var name:String{
         return _name
     }
